@@ -68,7 +68,7 @@
 
 ## 8. 實作照片
 
-![實作接線全貌](<img src="docs/board.jpg" width="60%">)
+![實作接線全貌](<img src="docs/board.png" width="60%">)
 *圖一：NUCLEO-G474RE 單板接線與狀態燈運作*
 
 ![終端機日誌輸出](docs/terminal.png)
