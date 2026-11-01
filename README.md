@@ -67,7 +67,8 @@
   - `HAL_GPIO_EXTI_Callback`：PC13 下降緣中斷，負責 50ms 去彈跳、抽測反應時間計算、及警報手動解除
 
 ## 8. 實作照片
-![實作接線全貌](docs/board.png)<img src="docs/board.jpg" width="60%">
+
+![實作接線全貌](<img src="docs/board.jpg" width="60%">)
 *圖一：NUCLEO-G474RE 單板接線與狀態燈運作*
 
 ![終端機日誌輸出](docs/terminal.png)
