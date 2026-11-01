@@ -29,13 +29,13 @@
 - [x] **PLL 170 MHz**：HSI16 $\div 4 \times 85 \div 2$ 升頻至 170 MHz，配置 FLASH 4 latency
 - [x] **外部中斷 EXTI**：PC13 外部中斷（`SYSCFG->EXTICR4` 選 PC13，`FTSR1` 下降緣，`IMR1` 致能）
 - [x] **NVIC 致能**：使能 TIM2 與 EXTI15_10 中斷向量，響應時基與按鍵事件
-- [ ] 優先權與巢狀：維持預設優先權等級
+- [ ] 優先權與巢狀：沒用到
 - [x] **軟體去彈跳**：EXTI 中斷中利用時戳計算 `ms_ticks - last_btn_ms >= 50ms` 排除機械彈跳
 - [x] **UART 傳送**：USART2 115200 8N1，檢查暫存器 `ISR` 的 `TXE` 位元後寫入 `TDR` 輸出雲端日誌
-- [ ] UART 接收+環形緩衝：專題以單向雲端傳送日誌為主
+- [ ] UART 接收+環形緩衝：沒用到
 - [x] **Timer 定時中斷**：TIM2 配置 PSC=169、ARR=999 產生 1 ms 中斷，維護 `ms_ticks` 與閃爍週期
-- [ ] PWM：燈號直接透過定時器分頻切換 GPIO 實現閃爍
-- [ ] 輸入捕捉：反應時間直接以 EXTI 觸發瞬間抓取 `ms_ticks` 相減計算
+- [ ] PWM：沒用到
+- [ ] 輸入捕捉：沒用到
 
 ## 5. 腳位表
 - `PA5`：LD2 綠色 LED（推挽輸出，安全指示）
@@ -67,7 +67,7 @@
   - `HAL_GPIO_EXTI_Callback`：PC13 下降緣中斷，負責 50ms 去彈跳、抽測反應時間計算、及警報手動解除
 
 ## 8. 實作照片
-![實作接線全貌](docs/board.jpg)
+![實作接線全貌](docs/board.png)
 *圖一：NUCLEO-G474RE 單板接線與狀態燈運作*
 
 ![終端機日誌輸出](docs/terminal.png)
