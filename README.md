@@ -68,11 +68,10 @@
 
 ## 8. 實作照片
 
-![實作接線全貌](<img src="docs/board.png" width="60%">)
-*圖一：NUCLEO-G474RE 單板接線與狀態燈運作*
-
-![終端機日誌輸出](docs/terminal.png)
-*圖二：USART2 115200 8N1 雲端日誌與反應時間記錄*
+| 實作接線全貌 | 終端機日誌輸出 |
+| :---: | :---: |
+| <img src="docs/board.png" width="380"> | <img src="docs/terminal.png" width="380"> |
+| *圖一：NUCLEO-G474RE 單板接線與狀態燈運作* | *圖二：USART2 雲端日誌與反應時間記錄* |
 
 ## 9. AI 使用說明
 - **AI 協作部分**：使用大型語言模型輔助構思狀態機列舉架構、終端機字串格式化以及 README 規格結構骨架。
